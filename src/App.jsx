@@ -2,7 +2,7 @@
 import { Suspense, useEffect } from "react";
 
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
   Link,
@@ -98,23 +98,19 @@ function AppLayout() {
         <main className="flex-1">
           <Suspense fallback={<PageLoader />}>
             <Routes>
-              {/* Home */}
               <Route path="/" element={<Home />} />
 
-              {/* Main Pages */}
               <Route path="/menu" element={<Menu />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/rewards" element={<Rewards />} />
 
-              {/* Shopping */}
               <Route path="/search" element={<Search />} />
               <Route path="/cart" element={<Cart />} />
 
-              {/* Authentication */}
               <Route path="/auth" element={<Auth />} />
-              <Route path="/checkout" element={<Checkout />} /> 
-              {/* 404 */}
+              <Route path="/checkout" element={<Checkout />} />
+
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
@@ -130,9 +126,9 @@ function AppLayout() {
 function App() {
   return (
     <CartProvider>
-      <BrowserRouter>
+      <HashRouter>
         <AppLayout />
-      </BrowserRouter>
+      </HashRouter>
     </CartProvider>
   );
 }
