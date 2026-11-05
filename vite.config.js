@@ -5,7 +5,5 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-
-  // GitHub Pages repository path
-  base: "/pizza-website/",
+  base: "/pizza-website_react/",
 });
