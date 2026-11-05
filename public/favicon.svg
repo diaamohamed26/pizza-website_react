@@ -1,0 +1,23 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5d18a"></stop>
+      <stop offset="100%" stop-color="#c49a62"></stop>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="16" fill="#17110e"></rect>
+
+  <path d="M15 17 Q32 8 49 17 L34 53 Q32 57 29 53 Z" fill="url(#gold)" stroke="#f5eee5" stroke-width="1.5" stroke-linejoin="round"></path>
+
+  <path d="M19 19 Q32 13 45 19" fill="none" stroke="#fff0c9" stroke-width="2" stroke-linecap="round"></path>
+
+  <circle cx="27" cy="27" r="3.2" fill="#a33d24"></circle>
+  <circle cx="38" cy="25" r="3.2" fill="#a33d24"></circle>
+  <circle cx="33" cy="38" r="3.2" fill="#a33d24"></circle>
+
+  <path d="M32 8 Q25 1 32 0 Q30 6 38 7 Q43 10 36 15" fill="#e9b968"></path>
+
+  <path d="M25 46 Q32 50 39 45" fill="none" stroke="#fff0c9" stroke-width="1.5" stroke-linecap="round"></path>
+</svg>
